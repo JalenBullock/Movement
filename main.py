@@ -40,4 +40,9 @@ while running
      pygame.quit()
      running = False
 
+screen.fill((255,255,255))
+Sprite.display(screen)
+
+
+pygame.display.update()
  
