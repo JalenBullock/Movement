@@ -39,5 +39,5 @@ while running
    if event.type == pygame.QUIT:
      pygame.quit()
      running = False
-wd
+
  
