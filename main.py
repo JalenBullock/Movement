@@ -1,23 +1,21 @@
 import pygame
 import os
 
-img_path = os.path.join('Dylan The Fox.png')
+img_path = os.path.join ('DylanTheFox.png')
 
 class charater(objects):
-  def__init__(self):
-   pygame.sprite.Sprite.__init__(self)
+    def __init__(self):
+      pygame.sprite.Sprite.__init__(self)
 
-   character.image = pygame.image.load
-   ('Dylan The Fox.png')
-   self.image = character.image
-   self.image = pygame.trasform.scale(self.image(50,50))
+      character.image = pygame.image.load ('DylanTheFox.png')
+      self.image = character.image
+      self.image = pygame.trasform.scale(self.image(50,50))
+      self.x = 600
+      self.y = 600
+      self.hitbox = (self.x, self.y, 55, 55)
 
-   self.x = 50
-   self.y = 50
-   self.hitbox = (self.x, self.y, 55, 55)
-
- def draw(self, surface):
-   surface.blit(self.image,(self.x, self.y))
+    def draw(self, surface):
+      surface.blit(self.image,(self.x, self.y))
    
 
 
@@ -29,7 +27,7 @@ screen = pygame.display.set_mode((screen_width,screen_hight))
 
 
 Sprite = character()
-clock = pygame.time.Clock()
+clock = pygame.time.Clock() 
 
 
 running = True
