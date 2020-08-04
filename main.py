@@ -21,8 +21,8 @@ class character(object):
 
 
 pygame.init()
-screen_width = 500
-screen_hight = 500
+screen_width = 520
+screen_hight = 520
 screen = pygame.display.set_mode((screen_width,screen_hight))
 
 
