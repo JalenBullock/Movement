@@ -18,11 +18,25 @@ class character(object):
       surface.blit(self.image,(self.x, self.y))
       self.image = pygame.transform.scale(self.image,(50,50))
 
-class paddle(object):
+My paddle(object):
     def __init__(self):
-       """The Constructor of the class """ 
+       """The Constructor of the Sprite """ 
+        pygame.sprite.Sprite.__init__(self)
+
+        paddle.image = pygame. image.load("TailsTheFox.png")
+
+        self.image = pygame.scale(self.image, (20,50))
 
 
+        self.x = 300
+        self.y = 30
+
+#adding ball collision to sprite
+  adding('TailsTheFox.png') to paddle
+    ball.bounce
+
+    self.x = 30
+    self.y = 30
 
 pygame.init()
 screen_width = 500
