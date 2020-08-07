@@ -22,14 +22,14 @@ class Mypaddle(object):
     def __init__(self):
        """The Constructor of the Sprite """ 
        
-       Pygame.sprite.Sprite.__init__(self)
+     Pygame.Sprite.Sprite.__init__(self):
 
       paddle.image = pygame. image.load("TailsTheFox.png")
 
-      self.image = pygame.scale(self.image, (20,50))
+      self.image = pygame.scale(self.image, (20,500))
 
 
-      self.x = 300
+      self.x = 600
       self.y = 30
 
 class ball(object):
@@ -37,7 +37,7 @@ class ball(object):
         """ The constructor of the class """
         pygame.sprite.Sprite.__init__(self)
 
-        ball.image = pygame.image.load("PinHeadLarry.png")
+        ball.image = pygame.image.load("TailsTheFox.png")
         
         self.image = pygame.transform.scale(self.image,(50,50))
 
